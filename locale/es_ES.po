@@ -1,0 +1,19 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:sale.sale,external_tax_amount:"
+msgid "Tax"
+msgstr "Impuesto"
+
+msgctxt "field:sale.sale,external_total_amount:"
+msgid "Total"
+msgstr "Total"
+
+msgctxt "field:sale.sale,external_untaxed_amount:"
+msgid "Untaxed"
+msgstr "Base imponible"
+
+msgctxt "view:sale.sale:"
+msgid "External Prices"
+msgstr "Preus externs"
