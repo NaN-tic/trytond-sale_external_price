@@ -10,11 +10,12 @@ __metaclass__ = PoolMeta
 
 
 class Sale:
-    'Sale'
     __name__ = 'sale.sale'
     external_untaxed_amount = fields.Numeric('Untaxed', readonly=True,
         digits=(16, Eval('currency_digits', 2)), depends=['currency_digits'])
     external_tax_amount = fields.Numeric('Tax', readonly=True,
         digits=(16, Eval('currency_digits', 2)), depends=['currency_digits'])
     external_total_amount = fields.Numeric('Total', readonly=True,
+        digits=(16, Eval('currency_digits', 2)), depends=['currency_digits'])
+    external_shipment_amount = fields.Numeric('Shipment', readonly=True,
         digits=(16, Eval('currency_digits', 2)), depends=['currency_digits'])
