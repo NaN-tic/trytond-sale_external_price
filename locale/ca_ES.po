@@ -2,6 +2,10 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "field:sale.sale,external_shipment_amount:"
+msgid "Shipment"
+msgstr "Enviament"
+
 msgctxt "field:sale.sale,external_tax_amount:"
 msgid "Tax"
 msgstr "Impost"
