@@ -3,7 +3,8 @@
 # the full copyright notices and license terms.
 from trytond.model import fields
 from trytond.pool import PoolMeta
-from trytond.pyson import Eval
+from trytond.config import config
+DIGITS = int(config.get('digits', 'unit_price_digits', 4))
 
 __all__ = ['Sale']
 __metaclass__ = PoolMeta
@@ -12,10 +13,10 @@ __metaclass__ = PoolMeta
 class Sale:
     __name__ = 'sale.sale'
     external_untaxed_amount = fields.Numeric('Untaxed', readonly=True,
-        digits=(16, Eval('currency_digits', 2)), depends=['currency_digits'])
+        digits=(16, DIGITS))
     external_tax_amount = fields.Numeric('Tax', readonly=True,
-        digits=(16, Eval('currency_digits', 2)), depends=['currency_digits'])
+        digits=(16, DIGITS))
     external_total_amount = fields.Numeric('Total', readonly=True,
-        digits=(16, Eval('currency_digits', 2)), depends=['currency_digits'])
+        digits=(16, DIGITS))
     external_shipment_amount = fields.Numeric('Shipment', readonly=True,
-        digits=(16, Eval('currency_digits', 2)), depends=['currency_digits'])
+        digits=(16, DIGITS))
