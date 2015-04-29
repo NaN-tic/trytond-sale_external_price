@@ -12,11 +12,11 @@ __metaclass__ = PoolMeta
 
 class Sale:
     __name__ = 'sale.sale'
-    external_untaxed_amount = fields.Numeric('Untaxed', readonly=True,
+    external_untaxed_amount = fields.Numeric('External Untaxed', readonly=True,
         digits=(16, DIGITS))
-    external_tax_amount = fields.Numeric('Tax', readonly=True,
+    external_tax_amount = fields.Numeric('External Tax', readonly=True,
         digits=(16, DIGITS))
-    external_total_amount = fields.Numeric('Total', readonly=True,
+    external_total_amount = fields.Numeric('External Total', readonly=True,
         digits=(16, DIGITS))
-    external_shipment_amount = fields.Numeric('Shipment', readonly=True,
+    external_shipment_amount = fields.Numeric('External Total Shipment', readonly=True,
         digits=(16, DIGITS))

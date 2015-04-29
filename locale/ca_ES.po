@@ -3,20 +3,20 @@ msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
 msgctxt "field:sale.sale,external_shipment_amount:"
-msgid "Shipment"
-msgstr "Enviament"
+msgid "External Total Shipment"
+msgstr "Total enviament extern"
 
 msgctxt "field:sale.sale,external_tax_amount:"
-msgid "Tax"
-msgstr "Impost"
+msgid "External Tax"
+msgstr "Impost extern"
 
 msgctxt "field:sale.sale,external_total_amount:"
-msgid "Total"
-msgstr "Total"
+msgid "External Total"
+msgstr "Total extern"
 
 msgctxt "field:sale.sale,external_untaxed_amount:"
-msgid "Untaxed"
-msgstr "Base imposable"
+msgid "External Untaxed"
+msgstr "Base imposable extern"
 
 msgctxt "view:sale.sale:"
 msgid "External Prices"
