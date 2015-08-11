@@ -3,11 +3,12 @@
 # the full copyright notices and license terms.
 from trytond.model import fields
 from trytond.pool import PoolMeta
-from trytond.config import config
-DIGITS = int(config.get('digits', 'unit_price_digits', 4))
+from trytond.config import config as config_
 
 __all__ = ['Sale']
 __metaclass__ = PoolMeta
+
+DIGITS = config_.getint('product', 'price_decimal', default=4)
 
 
 class Sale:
