@@ -3,6 +3,7 @@
 # the full copyright notices and license terms.
 from trytond.model import fields
 from trytond.pool import PoolMeta
+from trytond.pyson import Eval
 from trytond.config import config as config_
 
 __all__ = ['Sale']
@@ -21,3 +22,10 @@ class Sale:
         digits=(16, DIGITS))
     external_shipment_amount = fields.Numeric('External Total Shipment', readonly=True,
         digits=(16, DIGITS))
+
+    @classmethod
+    def view_attributes(cls):
+        return super(Sale, cls).view_attributes() + [
+            ('//page[@id="other"]/group[@id="external_price"]', 'states', {
+                    'invisible': ~Eval('external_untaxed_amount'),
+                    })]
