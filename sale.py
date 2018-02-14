@@ -20,8 +20,8 @@ class Sale:
         digits=(16, DIGITS))
     external_total_amount = fields.Numeric('External Total', readonly=True,
         digits=(16, DIGITS))
-    external_shipment_amount = fields.Numeric('External Total Shipment', readonly=True,
-        digits=(16, DIGITS))
+    external_shipment_amount = fields.Numeric('External Total Shipment',
+        readonly=True, digits=(16, DIGITS))
 
     @classmethod
     def view_attributes(cls):
