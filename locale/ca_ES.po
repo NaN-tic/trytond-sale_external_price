@@ -1,6 +1,10 @@
-# 
+#
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:sale.sale,external_discount:"
+msgid "External Discount"
+msgstr "Descuento externo"
 
 msgctxt "field:sale.sale,external_shipment_amount:"
 msgid "External Total Shipment"
