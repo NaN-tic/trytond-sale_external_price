@@ -4,8 +4,7 @@
 from trytond.model import fields
 from trytond.pool import PoolMeta
 from trytond.pyson import Eval
-from trytond.config import config as config_
-
+import trytond.config as config_
 __all__ = ['Sale']
 
 DIGITS = config_.getint('product', 'price_decimal', default=4)
